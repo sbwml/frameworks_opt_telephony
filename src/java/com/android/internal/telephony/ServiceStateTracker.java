@@ -2662,7 +2662,6 @@ public class ServiceStateTracker extends Handler {
             //    EXTRA_SPN = spn
             //    EXTRA_DATA_SPN = dataSpn
             spn = getServiceProviderName();
-            String spn = (iccRecords != null) ? OperatorUtils.operatorReplace(iccRecords.getServiceProviderName(), mSS.getOperatorNumeric()) : "";
             dataSpn = spn;
             showSpn = !noService && !TextUtils.isEmpty(spn)
                     && ((rule & CARRIER_NAME_DISPLAY_BITMASK_SHOW_SPN)
